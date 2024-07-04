@@ -1,13 +1,7 @@
 {
-    "projects": [
-      {
-        "name": "frontend",
-        "directory": "frontend"
-      },
-      {
-        "name": "backend",
-        "directory": "backend"
-      }
-    ]
+      "rewrites": [
+        { "source": "/api/(.*)", "destination": "/backend/$1" },
+        { "source": "/(.*)", "destination": "/frontend/$1" }
+      ]
   }
   
